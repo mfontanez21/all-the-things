@@ -5,6 +5,7 @@ import SillyThings from './pages/SillyThings/SillyThings'
 import MelvinThings from './pages/MelvinThings/MelvinThings'
 import AndreaThings from './pages/AndreaThings/AndreaThings'
 import Landing from './pages/Landing/Landing'
+import MonicaThings from './pages/MonicaThings/MonicaThings'
 
 const App = () => {
   const bensThings = [
@@ -80,6 +81,13 @@ const App = () => {
     }
   ]
 
+  const monicasThings =[
+    {
+      name: "Monica",
+      image: "https://i.imgur.com/Pazga2m.jpg",
+      attributes: ["frenchie owner", "hello", "goodbye"]
+    }
+  ]
 
   return (
     <Routes>
@@ -104,6 +112,10 @@ const App = () => {
       <Route
         path="/the-andrea-things"
         element={<AndreaThings things={andreasThings}/>}
+      />
+      <Route
+        path="/the-monica-things"
+        element={<MonicaThings things={monicasThings}/>}
       />
     </Routes>
   )
